@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI POC Discovery — Workframe</title>
+  <meta name="description" content="מסגרת עבודה לאפיון ובחירת POC מבוסס AI — תהליך שמוביל ממפת הלקוח עד מדדי הצלחה מוסכמים." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Karantina:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="site-header reveal" style="--d:0">
+    <div class="stamp kit-stamp">AI POC DISCOVERY / WORKFRAME</div>
+    <h1 class="site-title">מסגרת עבודה לאפיון ובחירת <span class="mono">POC</span> מבוסס <span class="mono">AI</span></h1>
+  </header>
+
+  <section class="hero reveal" style="--d:1">
+    <p class="hero-goal">
+      תהליך פשוט ועקבי: מבינים את הלקוח, מזהים בעיות שמתאימות ל־<span class="mono">AI</span>,
+      מדרגים לפי כאב עסקי, ובוחרים <span class="mono">POC</span> עם
+      <strong>מקסימום אימפקט במינימום מורכבות</strong>.
+    </p>
+
+    <aside class="principle-stamp" aria-label="עיקרון מרכזי">
+      <span class="principle-label mono">CORE PRINCIPLE</span>
+      <p class="principle-text">לא מתחילים מהפתרון.<br />מתחילים מהלקוח.</p>
+      <p class="principle-sub">
+        מזהים בעיות ← מקבעים במשפט ← מדרגים כאב ← <em>ורק אז</em> חושבים על <span class="mono">AI</span>
+      </p>
+    </aside>
+  </section>
+
+  <div class="board-layout">
+    <nav class="spine" id="spine" aria-label="שלבי התהליך">
+      <div class="spine-label mono">WORKFLOW</div>
+      <ol class="spine-list">
+        <li><a href="#step-1" data-step="1"><span class="spine-num">01</span><span class="spine-name">מיפוי</span></a></li>
+        <li><a href="#step-2" data-step="2"><span class="spine-num">02</span><span class="spine-name">שתי עדשות</span></a></li>
+        <li><a href="#step-3" data-step="3"><span class="spine-num">03</span><span class="spine-name">משפט בעיה</span></a></li>
+        <li><a href="#step-4" data-step="4"><span class="spine-num">04</span><span class="spine-name">כאב עסקי</span></a></li>
+        <li><a href="#step-5" data-step="5"><span class="spine-num">05</span><span class="spine-name">בחינת פתרון</span></a></li>
+        <li><a href="#step-6" data-step="6"><span class="spine-num">06</span><span class="spine-name">בחירת POC</span></a></li>
+        <li><a href="#step-7" data-step="7"><span class="spine-num">07</span><span class="spine-name">מדדי הצלחה</span></a></li>
+        <li><a href="#step-8" data-step="8"><span class="spine-num">08</span><span class="spine-name">יציאה לדרך</span></a></li>
+      </ol>
+    </nav>
+
+    <main class="stages">
+      <!-- STEP 01 -->
+      <section class="stage" id="step-1" data-step="1">
+        <header class="stage-head">
+          <span class="step-stamp mono">STEP 01</span>
+          <h2>מיפוי הלקוח והעבודה</h2>
+        </header>
+        <p class="stage-lede">
+          בשלב הראשון לא מחפשים בעיות ולא מציעים פתרונות.
+          מבינים בצורה רחבה את סביבת העבודה שבה אנחנו פועלים.
+        </p>
+
+        <div class="warn-stamp">
+          <span class="mono">KEEP WIDE</span>
+          מיפוי כללי ומקיף — לא חקירה של כל הלוגיקה העסקית.
+          נמנעים מחריגים, תנאי <span class="mono">if / else</span>, ומקרים מיוחדים.
+        </div>
+
+        <h3 class="kit-h">מה ממפים?</h3>
+        <ul class="checklist">
+          <li>מי הלקוח, הגורמים העסקיים, ומי מושפע מהפרויקט</li>
+          <li>תפקיד כל גורם ויום עבודה טיפוסי</li>
+          <li>שירותים ופעולות מרכזיים</li>
+          <li>מערכות, פלטפורמות וכלים בשימוש</li>
+          <li>מקורות מידע: נהלים, חוקים, מסמכים, מאגרים</li>
+          <li>תהליך עבודה טיפוסי: כניסה ← חיפוש ← הזנה ← בדיקה ← מעבר מערכות</li>
+        </ul>
+
+        <div class="output-tag">
+          <span class="mono">תוצר</span>
+          מפה פשוטה של גורמים, כלים, מקורות מידע ותהליכים מרכזיים
+        </div>
+      </section>
+
+      <!-- STEP 02 -->
+      <section class="stage" id="step-2" data-step="2">
+        <header class="stage-head">
+          <span class="step-stamp mono">STEP 02</span>
+          <h2>זיהוי בעיות — שתי עדשות</h2>
+        </header>
+        <p class="stage-lede">
+          לא שתי חלופות לבחירה. שתי עדשות לחשיבה שמרחיבות את מרחב ההזדמנויות.
+        </p>
+
+        <div class="lenses">
+          <article class="lens lens-a">
+            <span class="lens-badge mono">LENS A</span>
+            <h3>שיפור תהליך קיים</h3>
+            <p>תהליך שכבר קיים — אבל איטי, ידני, חלקי, או תלוי בחיפוש ובדיקות חוזרות.</p>
+            <blockquote>
+              איזה תהליך קיים היום, ואם נשפר אותו ב־<span class="mono">AI</span>,
+              נעלה משמעותית יעילות או איכות?
+            </blockquote>
+          </article>
+          <article class="lens lens-b">
+            <span class="lens-badge mono">LENS B</span>
+            <h3>יכולת חדשה</h3>
+            <p>
+              כלי או אוטומציה שלא קיימים היום — למשל הצפת מסמכים רלוונטיים לנציג בזמן טיפול,
+              במקום חיפוש ידני.
+            </p>
+            <blockquote>
+              הערך יכול להיות פשוט להביא את המידע הנכון קרוב יותר לעובד.
+            </blockquote>
+          </article>
+        </div>
+
+        <div class="accuracy-note">
+          <span class="mono">AI ≠ 100%</span>
+          עדיף שימוש שבו גם פתרון לא מושלם יוצר ערך.
+          הצפת מסמכים ב־80% עם בדיקת נציג — עדיין חוסך זמן.
+          טעות שגורמת להחלטה שגויה ללא בקרה — דורשת זהירות גבוהה.
+        </div>
+
+        <h3 class="kit-h">שאלות שמעוררות זיכרון של חיכוך</h3>
+        <ul class="checklist compact">
+          <li>אילו פעולות עדיין ידניות?</li>
+          <li>איפה מבזבזים זמן על חיפוש מידע?</li>
+          <li>איפה מצליבים מידע ממספר מקורות?</li>
+          <li>איפה בודקים נתונים ידנית מול מערכת?</li>
+          <li>אילו תהליכים חוזרים שוב ושוב?</li>
+          <li>איפה יש כללים רבים שקשה לתחזק?</li>
+          <li>איפה נדרשת הבנת תוכן/הקשר ולא רק בדיקה דטרמיניסטית?</li>
+        </ul>
+
+        <div class="output-tag">
+          <span class="mono">תוצר</span>
+          Pool של בעיות והזדמנויות — עדיין לא בוחרים פתרון
+        </div>
+      </section>
+
+      <!-- STEP 03 -->
+      <section class="stage" id="step-3" data-step="3">
+        <header class="stage-head">
+          <span class="step-stamp mono">STEP 03</span>
+          <h2>קיבוע כל בעיה במשפט פשוט</h2>
+        </header>
+        <p class="stage-lede">
+          לפני Chatbot, Agent או אוטומציה — מנסחים כל בעיה במשפט אחד בעברית.
+          המשפט מתאר את הבעיה בלבד. זה העוגן.
+        </p>
+
+        <div class="before-after">
+          <div class="ba-card bad">
+            <span class="ba-label mono">✗ SOLUTION BIAS</span>
+            <p>״אנחנו צריכים Agent שיחפש נהלים.״</p>
+          </div>
+          <div class="ba-arrow mono" aria-hidden="true">→</div>
+          <div class="ba-card good">
+            <span class="ba-label mono">✓ PROBLEM LOCK</span>
+            <p>
+              ״במהלך טיפול בפנייה, הנציג מבזבז זמן רב בחיפוש ידני של הנהלים
+              הרלוונטיים במספר מקורות מידע.״
+            </p>
+          </div>
+        </div>
+
+        <div class="rule-stamp">
+          בעיה קודם. פתרון אחר כך.
+        </div>
+
+        <div class="output-tag">
+          <span class="mono">תוצר</span>
+          רשימת בעיות — לכל אחת משפט אחד ברור ומוסכם
+        </div>
+      </section>
+
+      <!-- STEP 04 -->
+      <section class="stage" id="step-4" data-step="4">
+        <header class="stage-head">
+          <span class="step-stamp mono">STEP 04</span>
+          <h2>חישוב הכאב העסקי ודירוג</h2>
+        </header>
+        <p class="stage-lede">
+          עכשיו, ורק עכשיו, מדרגים. לא חייבים מודל פיננסי מדויק —
+          מגיעים עם הלקוח להבנה יחסית: מה כואב יותר ומה פחות.
+        </p>
+
+        <div class="pain-grid">
+          <span>זמן מבוזבז</span>
+          <span>כסף</span>
+          <span>כוח אדם</span>
+          <span>עומס תפעולי</span>
+          <span>פגיעה באיכות</span>
+          <span>טעויות ועבודה חוזרת</span>
+          <span>זמני טיפול</span>
+          <span>עיכובים</span>
+          <span>היקף מושפעים</span>
+          <span>הזדמנויות שמתפספסות</span>
+        </div>
+
+        <div class="callout">
+          <span class="mono">CRITICAL</span>
+          <strong>הבעיה הכי כואבת ≠ בהכרח ה־POC הראשון.</strong>
+          הכאב קובע את <em>סדר הבחינה</em> — לא אוטומטית את הבחירה.
+        </div>
+
+        <div class="output-tag">
+          <span class="mono">תוצר</span>
+          רשימת בעיות מדורגת לפי כאב עסקי
+        </div>
+      </section>
+
+      <!-- STEP 05 -->
+      <section class="stage" id="step-5" data-step="5">
+        <header class="stage-head">
+          <span class="step-stamp mono">STEP 05</span>
+          <h2>בחינת פתרונות והתאמה ל־POC</h2>
+        </header>
+        <p class="stage-lede">
+          עוברים לפי סדר הכאב, מהגבוה לנמוך.
+          רק כאן שואלים: איפה <span class="mono">AI</span> יכול לעזור?
+          מחפשים פתרון <span class="mono">POC</span> פשוט שמייצר ערך מהר — לא את הפתרון הכי מרשים.
+        </p>
+
+        <h3 class="kit-h">מה בוחנים?</h3>
+        <ul class="checklist">
+          <li>מה תפקיד ה־<span class="mono">AI</span> בתהליך? איזו החלטה/פעולה הוא מבצע?</li>
+          <li>על איזה מידע הוא מתבסס — והאם המידע זמין?</li>
+          <li>אילו אינטגרציות ולוגיקה עסקית נדרשות?</li>
+          <li>כמה גורמים ומערכות מעורבים?</li>
+          <li>מה האתגרים הטכניים?</li>
+          <li>האם אפשר למדוד תוצאה ולהדגים ערך בזמן סביר?</li>
+        </ul>
+
+        <div class="callout soft">
+          אם הבעיה הראשונה מורכבת מדי ל־POC — לא נתקעים. עוברים לבאה.
+        </div>
+
+        <div class="output-tag">
+          <span class="mono">תוצר</span>
+          מועמדים ל־POC שנבחנו מלמעלה למטה לפי כאב
+        </div>
+      </section>
+
+      <!-- STEP 06 -->
+      <section class="stage" id="step-6" data-step="6">
+        <header class="stage-head">
+          <span class="step-stamp mono">STEP 06</span>
+          <h2>בחירת ה־POC</h2>
+        </header>
+        <p class="stage-lede">
+          ה־POC הרצוי נמצא במפגש בין אימפקט עסקי גבוה למורכבות נמוכה —
+          לא בהכרח הפתרון לבעיה הכי גדולה בארגון.
+        </p>
+
+        <div class="matrix" role="img" aria-label="מטריצת אימפקט מול מורכבות">
+          <div class="matrix-y-label">אימפקט עסקי גבוה ↑</div>
+          <div class="matrix-plot">
+            <div class="matrix-quad q-high-hard">
+              <span class="mono">HIGH / HARD</span>
+              כואב — אבל כבד מדי ל־POC
+            </div>
+            <div class="matrix-quad q-sweet">
+              <span class="star" aria-hidden="true">★</span>
+              <span class="mono">POC ZONE</span>
+              מקסימום אימפקט × מינימום מורכבות
+            </div>
+            <div class="matrix-quad q-low-hard">
+              <span class="mono">LOW / HARD</span>
+              להימנע
+            </div>
+            <div class="matrix-quad q-low-easy">
+              <span class="mono">LOW / EASY</span>
+              קל לבנות — אף אחד לא צריך
+            </div>
+          </div>
+          <div class="matrix-x-label">מורכבות נמוכה →</div>
+        </div>
+
+        <p class="matrix-caption">
+          זה הפתרון שמאפשר להוכיח ערך אמיתי בצורה המהירה, הפשוטה והמדידה ביותר.
+        </p>
+
+        <div class="output-tag">
+          <span class="mono">תוצר</span>
+          בעיה אחת מוגדרת + פתרון POC מוסכם
+        </div>
+      </section>
+
+      <!-- STEP 07 -->
+      <section class="stage" id="step-7" data-step="7">
+        <header class="stage-head">
+          <span class="step-stamp mono">STEP 07</span>
+          <h2>הגדרת מדדי הצלחה</h2>
+        </header>
+        <p class="stage-lede">
+          רק אחרי שבחרנו בעיה ופתרון — מגדירים יחד מהי הצלחה.
+          המדדים מוסכמים על הגורם העסקי ועל הצוות הטכני.
+        </p>
+
+        <div class="metric-chips">
+          <span>% הצלחה</span>
+          <span>דיוק</span>
+          <span>Latency</span>
+          <span>זמן שנחסך</span>
+          <span>ירידה בזמן טיפול</span>
+          <span>פעולות ידניות שנחסכו</span>
+          <span>% מקרים עם ערך</span>
+          <span>איכות בבדיקה אנושית</span>
+          <span>עלות הפעלה</span>
+          <span>עמידה בדדליין</span>
+          <span>היקף תרחישים</span>
+        </div>
+
+        <div class="callout">
+          <span class="mono">WHY NOW</span>
+          כדי שבסוף לא נשאל ״נו, מה אתם חושבים?״ —
+          אלא: ״אלה המדדים. אלה התוצאות. האם עמדנו ביעד?״
+        </div>
+
+        <div class="output-tag">
+          <span class="mono">תוצר</span>
+          סט מדדים מוסכם שמגדיר מראש את הצלחת ה־POC
+        </div>
+      </section>
+
+      <!-- STEP 08 -->
+      <section class="stage" id="step-8" data-step="8">
+        <header class="stage-head">
+          <span class="step-stamp mono">STEP 08</span>
+          <h2>אישור ויציאה לדרך</h2>
+        </header>
+        <p class="stage-lede">
+          בנקודה הזאת יש הסכמה על ארבעה דברים. רק אז יוצאים לבנייה.
+        </p>
+
+        <ol class="go-board">
+          <li>
+            <span class="go-num mono">01</span>
+            <div>
+              <strong>איזו בעיה אנחנו פותרים</strong>
+              <span>משפט העוגן המוסכם</span>
+            </div>
+          </li>
+          <li>
+            <span class="go-num mono">02</span>
+            <div>
+              <strong>איזה פתרון אנחנו בונים כ־POC</strong>
+              <span>היקף ברור, לא מוצר מלא</span>
+            </div>
+          </li>
+          <li>
+            <span class="go-num mono">03</span>
+            <div>
+              <strong>למה דווקא ה־POC הזה</strong>
+              <span>אימפקט גבוה × מורכבות נמוכה</span>
+            </div>
+          </li>
+          <li>
+            <span class="go-num mono">04</span>
+            <div>
+              <strong>איך נדע אם הצלחנו</strong>
+              <span>מדדים מוסכמים מראש</span>
+            </div>
+          </li>
+        </ol>
+
+        <div class="output-tag">
+          <span class="mono">תוצר</span>
+          Go — אפשר להתחיל לבנות, למדוד ולהציג תוצאה
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- QUIET CLOSING -->
+  <section class="closing" id="closing">
+    <h2 class="closing-title">
+      <span class="mono">PRINCIPLES</span>
+      עקרונות העבודה
+    </h2>
+    <div class="principles-strip">
+      <span>ממפים לפני שמעמיקים</span>
+      <span>בעיות לפני פתרונות</span>
+      <span>Use Case = דוגמה, לא בהכרח הבעיה</span>
+      <span>משפט אחד מקבע כל בעיה</span>
+      <span>כאב לפני היתכנות</span>
+      <span>כאב = סדר בחינה; היתכנות = האם מתחילים</span>
+      <span>POC = אימפקט גבוה × מורכבות נמוכה</span>
+      <span>AI לא חייב להיות מושלם — אבל מחיר הטעות חייב להיות ברור</span>
+      <span>לא בונים לפני שמסכימים איך מודדים</span>
+    </div>
+
+    <h2 class="closing-title">
+      <span class="mono">WHY THIS SHAPE</span>
+      למה התהליך בנוי כך?
+    </h2>
+    <div class="why-grid">
+      <article><h3>לא להישאב ל־Use Case הראשון</h3><p>מקרה אחד הוא דוגמה — לא בהכרח הבעיה המרכזית. קודם Pool, אחר כך בחירה.</p></article>
+      <article><h3>לא להתחיל מהטכנולוגיה</h3><p>אם מחפשים איפה לבנות Chatbot — תמיד יימצא. השאלה היא מה כואב ללקוח.</p></article>
+      <article><h3>שתי העדשות מרחיבות</h3><p>שיפור הקיים + יצירת יכולת חדשה מגדילים את מרחב ההזדמנויות.</p></article>
+      <article><h3>משפט בעיה מונע Solution Bias</h3><p>״צריך Chatbot״ נועל דיון. משפט בעיה פותח אפשרויות רבות.</p></article>
+      <article><h3>כאב לפני היתכנות</h3><p>הטכנולוגיה משרתת את העסק — לא להפך. אחרת בונים POC שאף אחד לא צריך.</p></article>
+      <article><h3>כאב לבדו לא מספיק</h3><p>הבעיה הכואבת ביותר יכולה להיות POC גרוע אם היא כבדה מדי להוכחת ערך מהירה.</p></article>
+      <article><h3>POC ≠ מוצר מלא</h3><p>המטרה: לענות מהר על ״האם הרעיון באמת מייצר ערך?״</p></article>
+      <article><h3>לתכנן סביב אי־ודאות</h3><p>מה קורה כש־AI צודק / טועה? האם טעות מפחיתה יעילות או יוצרת נזק?</p></article>
+      <article><h3>מדדים = חוזה משותף</h3><p>בסוף לא שואלים ״מה אתם חושבים?״ — משווים לתוצאות מול יעד מוסכם.</p></article>
+    </div>
+
+    <h2 class="closing-title">
+      <span class="mono">OUTCOME</span>
+      התוצאה הרצויה של הסדנה
+    </h2>
+    <ol class="outcome-chain">
+      <li>מבינים את סביבת העבודה</li>
+      <li>זיהינו את הבעיות</li>
+      <li>ניסחנו אותן בצורה ברורה</li>
+      <li>דירגנו לפי כאב</li>
+      <li>מצאנו בעיה עם אימפקט גבוה ופתרון פשוט</li>
+      <li>בחרנו POC</li>
+      <li>הגדרנו מראש איך נמדוד הצלחה</li>
+      <li class="outcome-final">כולם מסכימים — ואפשר להתחיל לבנות</li>
+    </ol>
+
+    <p class="closing-foot">
+      מסגרת עבודה לייצור <span class="mono">POC</span>ים מבוססי <span class="mono">AI</span> עם לקוח:
+      תהליך שחוזר על עצמו, מונע קפיצה מוקדמת לפתרון, ומחבר צורך עסקי · היתכנות טכנית · מדידת ערך.
+    </p>
+  </section>
+
+  <footer class="site-footer mono">
+    AI POC DISCOVERY / WORKFRAME
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
